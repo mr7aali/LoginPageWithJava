@@ -47,7 +47,7 @@ public class MainFrame extends JFrame {
                 String firstName = tfFirstName.getText();
                 String lastName = tfLastName.getText();
 
-                LbWelcome.setText("Hello" + firstName + " " + lastName);
+                LbWelcome.setText("Hello " + firstName + " " + lastName);
             }
 
         });
@@ -85,10 +85,13 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(300, 400));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+        setLocation(750, 250);
+        
     }
 
     public static void main(String[] args) {
         MainFrame myFrame = new MainFrame();
         myFrame.initialize();
+       
     }
 }
